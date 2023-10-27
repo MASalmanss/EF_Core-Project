@@ -1,0 +1,14 @@
+@model Kurs
+
+<h2>Kurs Ekle</h2>
+<a href="/kurs/index" class="btn btn-primary">Kursları Görüntüle</a>
+<hr>
+
+<form asp-controller = "kurs" asp-action = "create" method="post">
+    <div class="mb-3">
+        <label asp-for="Baslik" class="form-label">Kurs Adı</label>
+        <input asp-for = "Baslik" class="form-control">
+    </div>
+    
+    <button type="submit" class="btn btn-secondary">Kaydet</button>
+</form>
